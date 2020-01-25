@@ -1,0 +1,5 @@
+#!/bin/csh
+set userID=`(whoami)`
+echo $userID
+set pid=`ps aux | grep -v $userID | cut -c10-14`
+echo $pid
